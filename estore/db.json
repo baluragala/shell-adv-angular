@@ -1,0 +1,25 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "products": [
+    { "title": "galaxy note1", "price": 1000, "stock": 10 },
+    { "title": "galaxy note2", "price": 1000, "stock": 0 },
+    { "title": "galaxy note3", "price": 1000, "stock": 40 },
+    { "title": "galaxy note4", "price": 1000, "stock": 40 }
+  ]
+}

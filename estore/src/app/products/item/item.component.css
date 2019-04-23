@@ -1,0 +1,11 @@
+.stock {
+    background-color: lightgreen
+}
+
+.nostock {
+    background-color: lightsalmon
+}
+
+.item {
+    border: 1px solid black;
+}

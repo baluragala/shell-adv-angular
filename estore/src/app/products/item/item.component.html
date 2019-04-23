@@ -1,0 +1,22 @@
+<div
+  [ngClass]="{
+    stock: product.stock > 0,
+    nostock: product.stock == 0,
+    item: true
+  }"
+>
+  <a [routerLink]="['/products', product.title]">
+    <h2
+      (click)="handleClick($event)"
+      [ngStyle]="product.stock == 0 ? stockStyle : noStockStyle"
+    >
+      {{ product.title }}
+    </h2>
+    <h4>{{ product.price | currency: "INR" }}</h4>
+    <h3 *ngIf="product.stock == 0; else stock">NO STOCK</h3>
+  </a>
+</div>
+
+<ng-template #stock>
+  <h3>STOCKED : {{ product.stock }}</h3>
+</ng-template>

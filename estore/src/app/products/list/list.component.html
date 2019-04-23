@@ -1,0 +1,8 @@
+<h2>Products ({{ selectedProduct }})</h2>
+<button (click)="handleClick($event)">Click Me!!</button>
+
+<sh-item
+  *ngFor="let p of products"
+  [prd]="p"
+  (selected)="handleSelected($event)"
+></sh-item>
